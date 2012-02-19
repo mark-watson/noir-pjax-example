@@ -3,7 +3,6 @@
             [noir.content.getting-started])
   (:require noir.request)
   (:use [noir.core :only [defpage]]
-        [hiccup form-helpers page-helpers]
         hiccup.core
         hiccup.page-helpers))
 
