@@ -10,7 +10,7 @@
   (if (nil? (((noir.request/ring-request) :headers) "x-pjax"))
     (common/layout
       [:p "Welcome to noir-pjax-example /"]
-      [:a {:href "/"} "foo 1"])
+      [:a {:href "/foo"} "foo 1"])
     (str
       "<p>Welcome to noir-pjax-example /</p>"
       "<a class=foo href=\"/foo\">foo 2</a>")))
@@ -19,8 +19,8 @@
   (if (nil? (((noir.request/ring-request) :headers) "x-pjax"))
     (common/layout
       [:p "Welcome to noir-pjax-example /foo"]
-      [:a {:href "/"} "home 4"])
+      [:a {:href "/"} "home 3"])
     (str
       "<p>Welcome to noir-pjax-example /foo</p>"
-      "<a class=foo href=\"/\">home 3</a>")))
+      "<a class=foo href=\"/\">home 4</a>")))
 
